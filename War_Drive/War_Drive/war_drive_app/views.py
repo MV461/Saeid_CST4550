@@ -21,8 +21,8 @@ def index(request):
         coordinates = (WiFiSpot.latitude, WiFiSpot.longitude)
         popup_html = (
             f"<b>SSID:</b> {WiFiSpot.SSID}<br>"
-            f"<b>FirstSeen:</b> {WiFiSpot.firstSeen}<br>"
-            f"<b>AuthMode:</b> {WiFiSpot.authMode}<br>"
+            f"<b>First Seen:</b> {WiFiSpot.firstSeen}<br>"
+            f"<b>Encryption:</b> {WiFiSpot.authMode}<br>"
         )
         folium.Marker(
             location=coordinates,
